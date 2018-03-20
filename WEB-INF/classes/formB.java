@@ -21,12 +21,16 @@ public class formB extends HttpServlet {
 //response.addCookie( c );  // must precede getWriter
 // BY
       //create a new session (with arg 'true')
-		HttpSession session  = request.getSession(true);
-		session.putValue(category, category);
-		session.putValue(firstname, firstname);
-		session.putValue(lastname, lastname);
-		session.putValue(phone, phone);
-		session.putValue(mail, mail);
+		HttpSession session = request.getSession(false);
+		if (session != null) {
+			session.invalidate();
+		}
+		session  = request.getSession(true);
+		session.putValue("category", category);
+		session.putValue("firstname", firstname);
+		session.putValue("lastname", lastname);
+		session.putValue("phone", phone);
+		session.putValue("mail", mail);
 
  //
       

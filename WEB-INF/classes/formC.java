@@ -40,14 +40,31 @@ public class formC extends HttpServlet {
 	  output.println( "<BODY></HEAD><h1 class='header' text-align='center'>Final step! Check your form before submit!</h1><br><div align='center'>" );
 	  
 		if (session!=null){
-			String category = (String)session.getValue(customerinfo[0]);
-			String firstname = (String)session.getValue(customerinfo[1]);
-			String lastname = (String)session.getValue(customerinfo[2]);
-			String phone = (String)session.getValue(customerinfo[3]);
-			String mail = (String)session.getValue(customerinfo[4]);	
+			String category="pc",firstname=null,lastname=null,phone=null,mail=null;
+			category = (String)session.getValue("category");
+			firstname = (String)session.getValue("firstname");
+			lastname = (String)session.getValue("lastname");
+			phone = (String)session.getValue("phone");
+			mail = (String)session.getValue("mail");
+			
+			/*for ( int i = 0; i < customerinfo.length; ++i ){
+				if (  ){
+					category = (String)session.getValue(customerinfo[i]);
+					output.println("<h1>TEST</h1>");
+				}
+				if ( customerinfo[i].equals( "firstname" ) )
+					firstname = (String)session.getValue(customerinfo[i]);
+				if ( customerinfo[i].equals( "lastname" ) )
+					lastname = (String)session.getValue(customerinfo[i]);
+				if ( customerinfo[i].equals( "phone" ) )
+					phone = (String)session.getValue(customerinfo[i]);
+				if ( customerinfo[i].equals( "mail" ) )
+					mail = (String)session.getValue(customerinfo[i]);
+
+				}*/
 			output.println( "<h1 style='font-family: TimesNewRoman; color: red;'>Review your info and submit the form</h1>" );
 			output.print( "<h2>First name:</h2>");
-			output.print( category);		
+			output.print( firstname);	
 			output.print( "<h2>Last name:</h2>");
 			output.print( lastname);
 			output.print( "<h2>Phone number:</h2>");
