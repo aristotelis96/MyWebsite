@@ -69,9 +69,9 @@ public class formB extends HttpServlet {
 	  if(category.equals("console")){
 		  output.println( "<h1 style='font-family: TimesNewRoman; color: red;'>Please select consoles you are interested in</h1>");		  
 		  output.println( "<img style=' width: 200px; height: 150px' src='./ps3.jpg'><input type='checkbox' name='Playstation3' value='Playstation3'> Playstation3 <br>");
-		  output.println( "<img style=' width: 200px; height: 150px' src='./ps3.jpg'><input type='checkbox' name='Playstation4' value='Playstation4'> Playstation4 <br>");
+		  output.println( "<img style=' width: 200px; height: 150px' src='./playstation4.jpg'><input type='checkbox' name='Playstation4' value='Playstation4'> Playstation4 <br>");
 		  output.println( "<img style=' width: 200px; height: 150px' src='./xboxone.png'><input type='checkbox' name='XboxOne' value='XboxOne'> Xbox One <br>");
-		  output.println( "<img style=' width: 200px; height: 150px' src='./ps3.jpg'><input type='checkbox' name='Xbox360' value='Xbox360'> Xbox 360 <br>");
+		  output.println( "<img style=' width: 200px; height: 150px' src='./xbox360.jpg'><input type='checkbox' name='Xbox360' value='Xbox360'> Xbox 360 <br>");
 		  output.println( "<img style=' width: 200px; height: 150px' src='./wii.jpg'><input type='checkbox' name='Wii' value='Wii'> Wii <br>");
 		  output.println( "<INPUT TYPE='reset'> <br>");
 		  output.println( "<INPUT TYPE=submit VALUE='Submit'>" );
