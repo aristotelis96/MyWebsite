@@ -19,7 +19,11 @@
 		<servlet-name>formB</servlet-name>
 		<servlet-class>formB</servlet-class>
 	</servlet>    
- 
+	<servlet>
+		<servlet-name>formC</servlet-name>
+		<servlet-class>formC</servlet-class>
+	</servlet>    
+
    <servlet-mapping>
      <servlet-name>formA</servlet-name>
      <url-pattern>/formA/*</url-pattern>
@@ -28,4 +32,9 @@
      <servlet-name>formB</servlet-name>
      <url-pattern>/formB/*</url-pattern>
    </servlet-mapping>   
+   <servlet-mapping>
+     <servlet-name>formC</servlet-name>
+     <url-pattern>/formC/*</url-pattern>
+   </servlet-mapping>   
+   
 </web-app>
