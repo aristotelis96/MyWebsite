@@ -29,7 +29,8 @@ public class formB extends HttpServlet {
 		output.println( "}.form-radio-item label, .form-checkbox-item label {white-space: normal; display: block; left: 14px; top: -14px; 	position relative; } </style>" );
 		output.println( "<BODY></HEAD><h3 class='header' text-align='center'>You must provide a name before continuing!</h3><br><div align='center'>" );
 		output.println( "<FORM ACTION='http://localhost:8080/mywebsite/formA' method='post'>" );
-		output.println( "<INPUT style='width: 300px; height: 100px;' TYPE=submit VALUE='Start over'>" );
+		output.println( "<INPUT align='center' style='width: 300px; height: 100px;' TYPE=submit VALUE='Start over'><br><br><br>" );
+		output.println("<img style=' width: auto; height: auto' src='./givemename.png'>");
 	}
 	else{
 
