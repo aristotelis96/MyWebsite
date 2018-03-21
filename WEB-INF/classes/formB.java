@@ -27,7 +27,7 @@ public class formB extends HttpServlet {
 		output.println( "font-size:      120px;" );
 		output.println( "font-style:    italic; color: red;background-color : black; text-align: center;" );
 		output.println( "}.form-radio-item label, .form-checkbox-item label {white-space: normal; display: block; left: 14px; top: -14px; 	position relative; } </style>" );
-		output.println( "<BODY></HEAD><h3 class='header' text-align='center'>You must provide a name before continuing!</h3><br><div align='center'>" );
+		output.println( "<BODY  text='white'  background='./backgroundIntro.png'></HEAD><h3 class='header' text-align='center'>You must provide a name before continuing!</h3><br><div align='center'>" );
 		output.println( "<FORM ACTION='http://localhost:8080/mywebsite/formA' method='post'>" );
 		output.println( "<INPUT align='center' style='width: 300px; height: 100px;' TYPE=submit VALUE='Start over'><br><br><br>" );
 		output.println("<img style=' width: auto; height: auto' src='./givemename.png'>");
@@ -64,7 +64,7 @@ public class formB extends HttpServlet {
 	  output.println( "font-size:      120px;" );
 	  output.println( "font-style:    italic; color: red;background-color : black; text-align: center;" );
 	  output.println( "}.form-radio-item label, .form-checkbox-item label {white-space: normal; display: block; left: 14px; top: -14px; position relative; } </style>" );
-	  output.println( "<BODY></HEAD><h1 class='header' text-align='center'>Give us info about your order</h1><br><div align='center'>" );
+	  output.println( "<BODY background='./backgroundIntro.png'></HEAD><h1 class='header' text-align='center'>Give us info about your order</h1><br><div align='center'>" );
 	  output.println( "<FORM ACTION='http://localhost:8080/mywebsite/formC' method='post'>" );
 	  if (category.equals("pc")){
 			 output.println( "<h1 style='font-family: TimesNewRoman; color: red;'>Lets find the best pc component</h1>" );
@@ -103,11 +103,11 @@ public class formB extends HttpServlet {
 	  }
 	  if(category.equals("console")){
 		  output.println( "<h1 style='font-family: TimesNewRoman; color: red;'>Please select consoles you are interested in</h1>");		  
-		  output.println( "<label><img style=' width: 200px; height: 150px' src='./ps3.jpg'><input type='checkbox' name='Playstation3' value='Playstation3'> Playstation3 </label><br>");
-		  output.println( "<label><img style=' width: 200px; height: 150px' src='./playstation4.jpg'><input type='checkbox' name='Playstation4' value='Playstation4'> Playstation4</label> <br>");
-		  output.println( "<label><img style=' width: 200px; height: 150px' src='./xboxone.png'><input type='checkbox' name='XboxOne' value='XboxOne'> Xbox One </label><br>");
-		  output.println( "<label><img style=' width: 200px; height: 150px' src='./xbox360.jpg'><input type='checkbox' name='Xbox360' value='Xbox360'> Xbox 360 </label><br>");
-		  output.println( "<label><img style=' width: 200px; height: 150px' src='./wii.jpg'><input type='checkbox' name='Wii' value='Wii'> Wii <br>");
+		  output.println( "<label><img style=' width: 200px; height: 150px' src='./ps3.jpg'><input type='checkbox' name='Playstation3' value='Playstation3'><font color='white'>Playstation 3 </font></label><br>");
+		  output.println( "<label><img style=' width: 200px; height: 150px' src='./playstation4.jpg'><input type='checkbox' name='Playstation4' value='Playstation4'><font color='white'> Playstation 4</font></label> <br>");
+		  output.println( "<label><img style=' width: 200px; height: 150px' src='./xboxone.png'><input type='checkbox' name='XboxOne' value='XboxOne'><font color='white'> Xbox One </font></label><br>");
+		  output.println( "<label><img style=' width: 200px; height: 150px' src='./xbox360.jpg'><input type='checkbox' name='Xbox360' value='Xbox360'><font color='white'> Xbox 360 </font></label><br>");
+		  output.println( "<label><img style=' width: 200px; height: 150px' src='./wii.jpg'><input type='checkbox' name='Wii' value='Wii'><font color='white'> Wii </font><br>");
 		  output.println( "<INPUT TYPE='reset'> </label><br>");
 		  output.println( "<INPUT TYPE=submit VALUE='Submit'>" );
 

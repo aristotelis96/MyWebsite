@@ -38,7 +38,7 @@ public class formC extends HttpServlet {
 	  output.println( "font-size:      80px;" );
 	  output.println( "font-style:    italic; color: red;background-color : black; text-align: center;" );
 	  output.println( "}.form-radio-item label, .form-checkbox-item label {white-space: normal; display: block; left: 14px; top: -14px; position relative; } </style>" );
-	  output.println( "<BODY></HEAD><h1 class='header' text-align='center'>Final step! Check your form before submit!</h1><br><div align='center'>" );
+	  output.println( "<BODY  text='white' background='./backgroundIntro.png'></HEAD><h1 class='header' text-align='center'>Final step! Check your form before submit!</h1><br><div align='center'>" );
 	  
 		if (session!=null){
 			String category="pc",firstname=null,lastname=null,phone=null,mail=null;
