@@ -32,9 +32,9 @@ public class formA extends HttpServlet {
 	  output.println( "E-mail:<br>" );
 	  output.println( "<input type='text' name='mail'><br><br><br>" );
 	  output.println( "<h1 style='font-family: TimesNewRoman; color: Green'>Now select a category!</h1>" );
-	  output.println( "<img style=' width: 200px; height: 150px' src='./console.png'>Consoles<input style='margin-right: 50px;' type='radio' name='category' value='console' checked='checked' />" );
-	  output.println( "<img style='width: 250px; height: 150px' src='./pc.jpg'>Pc Components<input style='margin-right: 50px;' type='radio' name='category' value='pc' />" );
-	  output.println( "<img style='width: 250px; height: 150px' src='./gameslibrary.png'>Games<input style='margin-right: 50px;' type='radio' name='category' value='Games' />" );
+	  output.println( "<label><img style=' width: 200px; height: 150px' src='./console.png'>Consoles<input style='margin-right: 50px;' type='radio' name='category' value='console' checked='checked' /></label>" );
+	  output.println( "<label><img style='width: 250px; height: 150px' src='./pc.jpg'>Pc Components<input style='margin-right: 50px;' type='radio' name='category' value='pc' /></label>" );
+	  output.println( "<label><img style='width: 250px; height: 150px' src='./gameslibrary.png'>Games<input style='margin-right: 50px;' type='radio' name='category' value='Games' /></label>" );
 	  output.println( "<br><br><INPUT TYPE=submit VALUE='Submit'></FORM></div></BODY></HTML>" );
       output.close();    // close stream
    }
