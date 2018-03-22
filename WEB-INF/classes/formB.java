@@ -28,7 +28,7 @@ public class formB extends HttpServlet {
 		output.println( "font-style:    italic; color: red;background-color : black; text-align: center;" );
 		output.println( "}.form-radio-item label, .form-checkbox-item label {white-space: normal; display: block; left: 14px; top: -14px; 	position relative; } </style>" );
 		output.println( "<BODY  text='white'  background='./backgroundIntro.png'></HEAD><h3 class='header' text-align='center'>You must provide a name before continuing!</h3><br><div align='center'>" );
-		output.println( "<FORM ACTION='http://localhost:8080/mywebsite/formA' method='post'>" );
+		output.println( "<FORM ACTION='./formA' method='post'>" );
 		output.println( "<INPUT align='center' style='width: 300px; height: 100px;' TYPE=submit VALUE='Start over'><br><br><br>" );
 		output.println("<img style=' width: auto; height: auto' src='./givemename.png'>");
 	}
@@ -65,7 +65,7 @@ public class formB extends HttpServlet {
 	  output.println( "font-style:    italic; color: red;background-color : black; text-align: center;" );
 	  output.println( "}.form-radio-item label, .form-checkbox-item label {white-space: normal; display: block; left: 14px; top: -14px; position relative; } </style>" );
 	  output.println( "<BODY background='./backgroundIntro.png'></HEAD><h1 class='header' text-align='center'>Give us info about your order</h1><br><div align='center'>" );
-	  output.println( "<FORM ACTION='http://localhost:8080/mywebsite/formC' method='post'>" );
+	  output.println( "<FORM ACTION='./formC' method='post'>" );
 	  if (category.equals("pc")){
 			 output.println( "<h1 style='font-family: TimesNewRoman; color: red;'>Lets find the best pc component</h1>" );
 			 output.println( "  <select style='font-family: TimesNewRoman; font-size: 30px' name='component'>");

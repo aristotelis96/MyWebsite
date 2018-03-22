@@ -111,9 +111,9 @@ public class formC extends HttpServlet {
 
 				output.print( "<br><br><br><br>");	
 			}
-			output.println( "<FORM ACTION='http://localhost:8080/mywebsite'>" );			
+			output.println( "<FORM ACTION='./'>" );			
 			output.println( "<INPUT style='background-color: red;' TYPE=submit VALUE='Start over'><br><br></FORM>" );
-			output.println( "<FORM ACTION='http://localhost:8080/mywebsite/final.html'>" );			
+			output.println( "<FORM ACTION='./final.html'>" );			
 			output.println( "<INPUT style='width: 300px; height: 100px;' TYPE=submit VALUE='Submit'></FORM>" );
 
 
@@ -122,7 +122,7 @@ public class formC extends HttpServlet {
 		else {
 			output.println( "<h1 style='font-family: TimesNewRoman; color: red;'>Something went wrong!</h1><br>" );
 			output.println( "<h3 style='font-family: TimesNewRoman; color: red;'>Your session has expired</h3>" );			 
-			output.println( "<FORM ACTION='http://localhost:8080/mywebsite'>" );
+			output.println( "<FORM ACTION='./'>" );
 			output.println( "<br><INPUT TYPE=submit VALUE='Start over!'>" );
 
 			
