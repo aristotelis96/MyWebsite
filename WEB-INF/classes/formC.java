@@ -5,17 +5,14 @@ import java.io.*;
 
 public class formC extends HttpServlet {
 
-   public void doPost( HttpServletRequest request,
+   public void doGet( HttpServletRequest request,
                        HttpServletResponse response )
       throws ServletException, IOException
    {
       PrintWriter output;
       	  //                             Replace the following 3 'cookie' lines
-//Cookie c = new Cookie( conti, getCities( conti ) );
-//c.setMaxAge( 120 );  // seconds until cookie removed
-//response.addCookie( c );  // must precede getWriter
-// BY
-      //create a new session (with arg 'true')
+		//cookies = request.getCookies(); // get client's cookies
+		
 		HttpSession session  = request.getSession(false);
 		String customerinfo[];
 		

@@ -18,6 +18,7 @@ public class formB extends HttpServlet {
 	  String phone = request.getParameter( "phone");
 	  String mail = request.getParameter( "mail");
 	  
+	  
 	if (firstname.equals("") || lastname.equals("")){
 		output.println( "<HTML><HEAD><TITLE>E-shop</TITLE> <style>" );
 		output.println( ".header{" );
@@ -35,9 +36,9 @@ public class formB extends HttpServlet {
 	else{
 
 	  //                             Replace the following 3 'cookie' lines
-//Cookie c = new Cookie( conti, getCities( conti ) );
-//c.setMaxAge( 120 );  // seconds until cookie removed
-//response.addCookie( c );  // must precede getWriter
+		//Cookie c = new Cookie( conti, getCities( conti ) );
+		//c.setMaxAge( 120 );  // seconds until cookie removed
+		//response.addCookie( c );  // must precede getWriter
 // BY
       //create a new session (with arg 'true')
 		HttpSession session = request.getSession(false);
@@ -65,7 +66,7 @@ public class formB extends HttpServlet {
 	  output.println( "font-style:    italic; color: red;background-color : black; text-align: center;" );
 	  output.println( "}.form-radio-item label, .form-checkbox-item label {white-space: normal; display: block; left: 14px; top: -14px; position relative; } </style>" );
 	  output.println( "<BODY background='./backgroundIntro.png'></HEAD><h1 class='header' text-align='center'>Give us info about your order</h1><br><div align='center'>" );
-	  output.println( "<FORM ACTION='./formC' method='post'>" );
+	  output.println( "<FORM ACTION='./formC' method='get'>" );
 	  if (category.equals("pc")){
 			 output.println( "<h1 style='font-family: TimesNewRoman; color: red;'>Lets find the best pc component</h1>" );
 			 output.println( "  <select style='font-family: TimesNewRoman; font-size: 30px' name='component'>");
